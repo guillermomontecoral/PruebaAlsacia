@@ -49,8 +49,8 @@ builder.Services.AddSwaggerGen(c =>
 #region Data Base Configuration
 builder.Services.AddDbContext<TaskDbContext>(options =>
 {
-    options.UseNpgsql(builder.Configuration.GetConnectionString("LocalDB"));
-    //options.UseNpgsql(builder.Configuration.GetConnectionString("DockerDB"));
+    //options.UseNpgsql(builder.Configuration.GetConnectionString("LocalDB"));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DockerDB"));
 });
 #endregion
 
@@ -116,5 +116,22 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+// Aplica las migraciones automáticamente al iniciar la aplicación
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<TaskDbContext>();
+    try
+    {
+        // Verificar si ya se han aplicado las migraciones
+        dbContext.Database.Migrate(); // Aplica las migraciones si es necesario
+        Console.WriteLine("Migraciones aplicadas con éxito.");
+    }
+    catch (Exception ex)
+    {
+        // Si ocurre un error, loguea el problema
+        Console.WriteLine($"Error al aplicar las migraciones: {ex.Message}");
+    }
+}
 
 app.Run();

@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Esperar a que el contenedor de la base de datos esté disponible
 /app/wait-for-it.sh api-db:5432 --timeout=30 --strict -- echo "Base de datos disponible!"
 

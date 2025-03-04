@@ -1,5 +1,4 @@
 #!/bin/bash
-
 echo "Esperando a que PostgreSQL esté disponible en api-db:5432..."
 
 while !</dev/tcp/api-db/5432; do

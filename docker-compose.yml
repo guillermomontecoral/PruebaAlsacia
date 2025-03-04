@@ -1,5 +1,5 @@
 networks:
-  app_network:  #Definimos una red personalizada
+  app-network:  #Definimos una red personalizada
     driver: bridge
 
 services:
@@ -14,12 +14,14 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - ConnectionStrings__DockerDB=Host=api-db;Database=PruebaAlsacia;Username=postgres;Password=Abcd123
     networks:
-      - app_network
+      - app-network
     image: api-image
     ports:
       - "5133:8080"
     container_name: api
-    entrypoint: ["/app/wait-for-it.sh", "api-db", "5432", "--", "dotnet", "SistemaGestionTareas.dll"]
+    # entrypoint: ["/app/wait-for-it.sh", "api-db", "5432", "--", "dotnet", "SistemaGestionTareas.dll"]
+    # entrypoint: ["bash", "-c", "dotnet ef database update --project /app/SistemaGestionTareas/DataAccess/DataAccess.csproj && dotnet SistemaGestionTareas.dll"]
+
 
 #Fronentd Vite + React
   web:
@@ -27,7 +29,7 @@ services:
       context: ./sistema-gestion-tareas
       dockerfile: Dockerfile
     networks:
-      - app_network
+      - app-network
     image: web-image
     ports:
       - "5173:5173"
@@ -55,7 +57,7 @@ services:
     ports:
       - "5432:5432" #Puerto por defecto de PostgreSQL es el 5432
     networks:
-      - app_network
+      - app-network
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 10s
