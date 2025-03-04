@@ -49,7 +49,6 @@ namespace SistemaGestionTareas.Controllers
         {
             try
             {
-                // Generar el token JWT
                 var claims = new[]
                 {
                      new Claim(JwtRegisteredClaimNames.Sub, Convert.ToString(id)),

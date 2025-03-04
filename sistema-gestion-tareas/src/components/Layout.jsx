@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import "../i18n"; // Importamos la configuración de i18n
+import "../i18n";
 import { IoLogOutOutline } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import { getToken } from "../api/config";
@@ -35,7 +35,6 @@ const Layout = ({ children }) => {
                 src="/public/images/icon-flags/united-states.png"
               />
             </button>
-            {/* Tooltip */}
             <span className="absolute top-full mb-2 left-1/2 transform -translate-x-1/2 px-3 py-1 text-sm text-white bg-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity">
               {t("english")}
             </span>
@@ -51,7 +50,6 @@ const Layout = ({ children }) => {
                 src="/public/images/icon-flags/spain.png"
               />
             </button>
-            {/* Tooltip */}
             <span className="absolute top-full mb-2 left-1/2 transform -translate-x-1/2 px-3 py-1 text-sm text-white bg-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity">
               {t("spanish")}
             </span>
@@ -64,8 +62,6 @@ const Layout = ({ children }) => {
               >
                 <IoLogOutOutline className="text-3xl" />
               </button>
-
-              {/* Tooltip */}
               <span className="absolute top-full mb-2 left-1/2 transform -translate-x-1/2 px-3 py-1 text-sm text-white bg-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity">
                 {t("logout")}
               </span>

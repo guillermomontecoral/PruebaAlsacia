@@ -33,11 +33,9 @@ export const changeStatus = async (id, status) => {
   } catch (error) {
     // Manejo de errores de Axios
     if (axios.isAxiosError(error)) {
-      console.error("Axios error:", error);
-      throw new Error(`Axios error: ${error.message}`);
+      throw new Error(error.response.data);
     } else {
       // Manejo de otros errores inesperados
-      console.error("Unexpected error:", error);
       throw new Error("An unexpected error occurred.");
     }
   }

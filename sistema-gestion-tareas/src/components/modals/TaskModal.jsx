@@ -71,7 +71,6 @@ const TaskModal = ({
       }, 3000);
     } catch (error) {
       setMessage(error.response.data);
-      console.log(error);
       setLoading(false);
     }
   };

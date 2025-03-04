@@ -37,5 +37,6 @@
   "delete_task_sccess": "Tarea elimina exitosamente",
   "logout": "Salir",
   "get_tasks": "Obteniendo las tareas",
-  "status_change":"Estado cambiado correctamente"
+  "status_change":"Estado cambiado correctamente",
+  "error_response":"Respuesta no esperada"
 }

@@ -61,9 +61,6 @@ namespace DataAccess.Repositories
                     .ThenBy(t => t.Status)
                     .ToListAsync();
 
-                //if (tasks.Count == 0)
-                //    throw new Exception("There are no registered tasks.");
-
                 return tasks;
             }
             catch (Exception ex)
@@ -104,7 +101,6 @@ namespace DataAccess.Repositories
                 // Marca la entidad como modificada
                 _taskDbContext.Entry(task).State = EntityState.Modified;
 
-                // Guarda los cambios
                 await _taskDbContext.SaveChangesAsync();
             }
             catch (Exception ex)
@@ -122,7 +118,6 @@ namespace DataAccess.Repositories
             task.Status = (Domain.Enums.TaskStatus)status;
             _taskDbContext.Entry(task).State = EntityState.Modified;
 
-            // Guarda los cambios
             await _taskDbContext.SaveChangesAsync();
         }
     }

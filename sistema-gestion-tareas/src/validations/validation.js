@@ -25,9 +25,6 @@ export const validate = (name, value) => {
       const formattedExpirationDate = new Date(expirationDate).toISOString().split("T")[0];
       const formattedToday = today.toISOString().split("T")[0];  // Fecha de hoy - 1 día
     
-      console.log(formattedExpirationDate);
-      console.log(formattedToday);
-    
       if (formattedExpirationDate < formattedToday) {
         errorMessage = t("expiration_date_error");
       } else {

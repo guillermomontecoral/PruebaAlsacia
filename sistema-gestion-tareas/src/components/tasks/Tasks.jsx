@@ -23,8 +23,7 @@ const Tasks = () => {
     error: "",
   });
   const [isOpenEditTask, setIsOpenEditTask] = useState(false);
-  const [taskToEdit, setTaskToEdit] = useState(null); // Estado para la tarea que se está editando
-  const prevAlertStateRef = useRef(); //Almacena el valor previo y verifica si cambio isAlertOpen
+  const [taskToEdit, setTaskToEdit] = useState(null);
 
   useEffect(() => {
       if(tasks.length === 0) {
@@ -51,9 +50,8 @@ const Tasks = () => {
       });
       setIsAlertOpen(false);
     } catch (error) {
-      console.error("Failed to delete task:", error.message);
       setMessage({
-        error: "There was an error deleting the task. Please try again.",
+        error: error.message,
       });
     }
     setTimeout(() => {
@@ -113,7 +111,6 @@ const Tasks = () => {
     <section>
       <div className="flex justify-center items-center min-h-screen p-5 ">
         <div className="bg-white w-full max-w-7xl rounded-lg overflow-x-auto border border-gray-200 ">
-          {/* Header */}
           <div className="p-10 min-w-[1000px]">
             <div className="flex justify-between items-center">
               <div>

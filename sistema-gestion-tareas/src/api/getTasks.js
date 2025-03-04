@@ -15,15 +15,12 @@ export const getTasks = async () => {
         return response.data;
         
       } else {
-        console.error(`Unexpected response status: ${response.status}`);
         throw new Error(`Unexpected response status: ${response.status}`);
       }
     } catch (error) {
       if (axios.isAxiosError(error)) {
-        console.error("Axios error:", error);
-        throw new Error(error.message);
+        throw new Error(error.response.data);
       } else {
-        console.error("Unexpected error: " + error);
         throw new Error("Unexpected error: " + error);
       }
     }

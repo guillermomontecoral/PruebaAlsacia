@@ -36,7 +36,6 @@ export const getToken = () => {
   export const getIdUser = () => {
     const token = localStorage.getItem("token");
     if (!token) {
-      console.log("Token no disponible");
       return null;
     }
   
@@ -44,7 +43,6 @@ export const getToken = () => {
       const id = jwtDecode(token);
       return id.sub; // El ID del usuario
     } catch (error) {
-      console.error("Error decodificando el token:", error);
       return null;
     }
   };

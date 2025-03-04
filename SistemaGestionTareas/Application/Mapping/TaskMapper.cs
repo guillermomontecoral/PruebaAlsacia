@@ -26,20 +26,6 @@ namespace Application.Mapping
             };
         }
 
-        internal static Domain.Entities.Task UpdateFromDto(TaskUpdateDto taskDto)
-        {
-            if (taskDto == null)
-                throw new ArgumentNullException("TaskDto cannot be null");
-
-            return new Domain.Entities.Task()
-            {
-                Title = taskDto.Title,
-                Description = taskDto.Description,
-                ExpirationDate = (DateOnly)taskDto.ExpirationDate,
-            };
-        }
-
-
         internal static IEnumerable<TaskGetDto> ToListDto(IEnumerable<Domain.Entities.Task> tasks)
         {
             var tasksDtos = tasks.Select(t => ToDto(t)).ToList();

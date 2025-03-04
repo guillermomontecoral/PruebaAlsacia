@@ -71,6 +71,7 @@ namespace Domain.Entities
 
         }
 
+        //Para pruebas unitarias
         public Task(int id, string title, string description, DateOnly expirationDate, Domain.Enums.TaskStatus status, int userId)
         {
             Id = id;

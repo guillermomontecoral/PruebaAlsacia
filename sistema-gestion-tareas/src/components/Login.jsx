@@ -1,5 +1,3 @@
-import axios from "axios";
-import { API_URL } from "../api/config";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { login as auth } from "../api/login";
@@ -24,13 +22,11 @@ const Login = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    console.log(login);
 
     try {
       // Llamada a la función auth (que es un alias de login)
       const result = await auth(login);
 
-      // Si el login fue exitoso, navega a la siguiente página
       if (result) {
         navigate("/tasks");
       }

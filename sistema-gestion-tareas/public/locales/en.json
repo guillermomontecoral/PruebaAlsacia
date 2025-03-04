@@ -37,5 +37,6 @@
   "delete_task_sccess": "Task deleted successfully",
   "logout" : "Logout",
   "get_tasks": "Fetching the tasks",
-  "status_change":"Status changed successfully"
+  "status_change":"Status changed successfully",
+  "error_response":"Unexpected response"
 }
