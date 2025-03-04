@@ -44,8 +44,6 @@ Fue desarrollado utilizando **React** con **Vite**, lo que permite una carga rá
 
 ### Backend:
 1. **Dockerfile**: Se encuentra containerizado utilizando un **Dockerfile** el cual define el entorno de ejecución para la API.
-2. **Script `wait-for-it.sh`**: Utilizado para garantizar que los servicios dependientes (como la base de datos) estén completamente disponibles antes de que la api intente ejecutarse.
-3. **Script `init-db.sh`**: Este script utiliza `wait-for-it.sh` el cual espera que la base de datos esté conectada correctamente y luego ejecuta las migraciones necesarias, para crear las tablas y cargar datos de prueba.
 
 ### Frontend Docker:
 1. **Dockerfile**: Se encuentra containerizado utilizando un **Dockerfile** el cual define el entorno de ejecución de la web.
