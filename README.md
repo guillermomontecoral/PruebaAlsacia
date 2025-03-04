@@ -81,9 +81,9 @@ Este archivo docker-compose.yml es el encargado de orquestar los contenedores de
    docker-compose up --build
 
  - **Acceder a la aplicación**
-**Backend API**: La API del backend debería estar disponible en **http://localhost:5133**
-**Frontend**: El frontend debería estar disponible en **http://localhost:5173**
-**Base de datos**: PostgreSQL corre en el pueto **5432**
+	- **Backend API**: La API del backend debería estar disponible en **http://localhost:5133**
+	- **Frontend**: El frontend debería estar disponible en **http://localhost:5173**
+	- **Base de datos**: PostgreSQL corre en el pueto **5432**
 
  - **Datos de prueba:**
      - **Email**: prueba@prueba.com
