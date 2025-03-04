@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="687e4361-b7bc-4abf-8a53-600187556c66" name="monte@GUILLERMO 2025-03-03 21:20:41" runUser="GUILLERMO\monte" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-03-03T21:20:41.2345653-03:00" queuing="2025-03-03T21:20:41.2345659-03:00" start="2025-03-03T21:20:39.5197996-03:00" finish="2025-03-03T21:20:41.3839786-03:00" />
+  <TestSettings name="default" id="8b2ec89d-e58f-43e8-940c-1bb9421f904c">
+    <Deployment runDeploymentRoot="monte_GUILLERMO_2025-03-03_21_20_41" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="0e8193be-6b8f-4c72-b9f3-e54a032d9d5f" testId="75c9a54c-538a-dbaf-31a2-b6ecd05420a2" testName="Tests.TaskTests.Task_ShouldSetDefaultStatus_WhenCreated" computerName="GUILLERMO" duration="00:00:00.0002274" startTime="2025-03-03T21:20:41.0498196-03:00" endTime="2025-03-03T21:20:41.0499478-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0e8193be-6b8f-4c72-b9f3-e54a032d9d5f" />
+    <UnitTestResult executionId="4bb90b4f-cfca-400d-bf6a-1cd658802e66" testId="72348de9-18cd-d875-d650-9f9c0d0c2db5" testName="Tests.TaskTests.Task_ShouldSetDescription_WhenValidDescription" computerName="GUILLERMO" duration="00:00:00.0001922" startTime="2025-03-03T21:20:41.1315558-03:00" endTime="2025-03-03T21:20:41.1318164-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4bb90b4f-cfca-400d-bf6a-1cd658802e66" />
+    <UnitTestResult executionId="fc4b6418-881c-4a61-b6fb-5eb2fa67d0a0" testId="fbe99ba2-1e40-e2fd-75b0-b19bc6f22894" testName="Tests.ControllerTests.TestAddTask_ReturnsCreatedResult" computerName="GUILLERMO" duration="00:00:00.0125444" startTime="2025-03-03T21:20:41.2391825-03:00" endTime="2025-03-03T21:20:41.2512659-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fc4b6418-881c-4a61-b6fb-5eb2fa67d0a0" />
+    <UnitTestResult executionId="3cac73f8-d73a-4ab9-a8d2-ef39f843acd5" testId="b8673378-078f-3e52-ddd4-9b0a948e598a" testName="Tests.ControllerTests.TestGetById_ReturnsOkResult" computerName="GUILLERMO" duration="00:00:00.0033455" startTime="2025-03-03T21:20:41.2518577-03:00" endTime="2025-03-03T21:20:41.2548291-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3cac73f8-d73a-4ab9-a8d2-ef39f843acd5" />
+    <UnitTestResult executionId="140059a0-3341-46ec-99f0-7c02c56f18bd" testId="edb2b2d3-7242-7ffb-c2d7-5444e3bd7b04" testName="Tests.ControllerTests.TestGetAll_ReturnsOkResult" computerName="GUILLERMO" duration="00:00:00.0046509" startTime="2025-03-03T21:20:41.2235281-03:00" endTime="2025-03-03T21:20:41.2277750-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="140059a0-3341-46ec-99f0-7c02c56f18bd" />
+    <UnitTestResult executionId="1ec7c7a2-8a48-44ff-863e-f77b392bc252" testId="2ee41c34-4a29-6d25-9a2d-b35daf1c34e5" testName="Tests.ControllerTests.TestGetAll_ReturnsNotFoundResult" computerName="GUILLERMO" duration="00:00:00.0047927" startTime="2025-03-03T21:20:41.2183865-03:00" endTime="2025-03-03T21:20:41.2229236-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1ec7c7a2-8a48-44ff-863e-f77b392bc252" />
+    <UnitTestResult executionId="a13eb255-2af8-40fb-a491-82205626f5a8" testId="49a10143-e464-47df-3c14-dcf902594a91" testName="Tests.ControllerTests.TestUpdateTask_ReturnsNoContentResult" computerName="GUILLERMO" duration="00:00:00.0106166" startTime="2025-03-03T21:20:41.2284377-03:00" endTime="2025-03-03T21:20:41.2385681-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a13eb255-2af8-40fb-a491-82205626f5a8" />
+    <UnitTestResult executionId="34d2a5e6-2585-419c-8076-0a0e4f19d426" testId="4f26d77b-09ca-901e-26ec-7d2ca9f9c227" testName="Tests.ControllerTests.TestDeleteTask_ReturnsOkResult" computerName="GUILLERMO" duration="00:00:00.0255300" startTime="2025-03-03T21:20:41.1927940-03:00" endTime="2025-03-03T21:20:41.2178968-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="34d2a5e6-2585-419c-8076-0a0e4f19d426" />
+    <UnitTestResult executionId="9faa6df4-c0c4-4dad-9627-fb551d26dc52" testId="4b45d5fc-2f01-1360-862a-7fa7f8d6bbff" testName="Tests.TaskTests.Task_ShouldThrowException_WhenInvalidStatus" computerName="GUILLERMO" duration="00:00:00.0004523" startTime="2025-03-03T21:20:41.0494164-03:00" endTime="2025-03-03T21:20:41.0495235-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9faa6df4-c0c4-4dad-9627-fb551d26dc52" />
+    <UnitTestResult executionId="fbbf2771-a4a9-47dc-8dca-7ebfce88d43c" testId="18fb11bc-38b1-3f54-9477-1eb2f1c61765" testName="Tests.TaskTests.Task_ShouldThrowException_WhenTitleIsNullOrEmpty" computerName="GUILLERMO" duration="00:00:00.0006816" startTime="2025-03-03T21:20:41.0488404-03:00" endTime="2025-03-03T21:20:41.0490166-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fbbf2771-a4a9-47dc-8dca-7ebfce88d43c" />
+    <UnitTestResult executionId="5a286cb3-83ff-42d9-980b-10ab375ea32e" testId="37d86582-7e92-0d66-9dab-3a385fec8404" testName="Tests.TaskTests.Task_ShouldSetStatus_WhenValidStatus" computerName="GUILLERMO" duration="00:00:00.0057931" startTime="2025-03-03T21:20:41.0471718-03:00" endTime="2025-03-03T21:20:41.0473349-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5a286cb3-83ff-42d9-980b-10ab375ea32e" />
+    <UnitTestResult executionId="0b7839dc-f8aa-4c93-9f6c-c5687a6ae815" testId="43a20961-a799-b8bb-b8bf-acfedeabf1bc" testName="Tests.ControllerTests.TestGetById_ReturnsNotFoundResult" computerName="GUILLERMO" duration="00:00:00.2466306" startTime="2025-03-03T21:20:40.9377864-03:00" endTime="2025-03-03T21:20:41.1921883-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0b7839dc-f8aa-4c93-9f6c-c5687a6ae815" />
+    <UnitTestResult executionId="f31c4ab6-27a9-4d84-969f-8bc9c83119c9" testId="57c4e6af-cf6f-1b46-f56a-be5d3d128875" testName="Tests.TaskTests.Task_ShouldSetExpirationDate_WhenValidExpirationDate" computerName="GUILLERMO" duration="00:00:00.0094111" startTime="2025-03-03T21:20:41.0457943-03:00" endTime="2025-03-03T21:20:41.0459916-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f31c4ab6-27a9-4d84-969f-8bc9c83119c9" />
+    <UnitTestResult executionId="6a16f30a-df49-49d9-983a-5ec801297c61" testId="15f9dba5-a79a-1f67-9ee4-cdb88f484e26" testName="Tests.TaskTests.Task_ShouldThrowException_WhenDescriptionIsNullOrEmpty" computerName="GUILLERMO" duration="00:00:00.0737170" startTime="2025-03-03T21:20:40.9347992-03:00" endTime="2025-03-03T21:20:41.0235465-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6a16f30a-df49-49d9-983a-5ec801297c61" />
+    <UnitTestResult executionId="af87f2d6-4d82-4451-bc31-031f84dc2e36" testId="f191727e-9f24-3daf-e371-3e1ca0c4ebe4" testName="Tests.TaskTests.Task_ShouldThrowException_WhenExpirationDateIsInThePast" computerName="GUILLERMO" duration="00:00:00.0005706" startTime="2025-03-03T21:20:41.0481359-03:00" endTime="2025-03-03T21:20:41.0483546-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="af87f2d6-4d82-4451-bc31-031f84dc2e36" />
+    <UnitTestResult executionId="d8193a77-051c-43eb-9e61-5bf4d5cd48fa" testId="3e39ad7c-388a-6e23-9bf3-579af9f040de" testName="Tests.TaskTests.Task_ShouldSetTitle_WhenValidTitle" computerName="GUILLERMO" duration="00:00:00.0003551" startTime="2025-03-03T21:20:41.0476727-03:00" endTime="2025-03-03T21:20:41.0477930-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d8193a77-051c-43eb-9e61-5bf4d5cd48fa" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Tests.ControllerTests.TestUpdateTask_ReturnsNoContentResult" storage="c:\users\monte\documents\pruebaalsacia\sistemagestiontareas\tests\bin\debug\net8.0\tests.dll" id="49a10143-e464-47df-3c14-dcf902594a91">
+      <Execution id="a13eb255-2af8-40fb-a491-82205626f5a8" />
+      <TestMethod codeBase="C:\Users\monte\Documents\PruebaAlsacia\SistemaGestionTareas\Tests\bin\Debug\net8.0\Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tests.ControllerTests" name="TestUpdateTask_ReturnsNoContentResult" />
+    </UnitTest>
+    <UnitTest name="Tests.TaskTests.Task_ShouldSetDescription_WhenValidDescription" storage="c:\users\monte\documents\pruebaalsacia\sistemagestiontareas\tests\bin\debug\net8.0\tests.dll" id="72348de9-18cd-d875-d650-9f9c0d0c2db5">
+      <Execution id="4bb90b4f-cfca-400d-bf6a-1cd658802e66" />
+      <TestMethod codeBase="C:\Users\monte\Documents\PruebaAlsacia\SistemaGestionTareas\Tests\bin\Debug\net8.0\Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tests.TaskTests" name="Task_ShouldSetDescription_WhenValidDescription" />
+    </UnitTest>
+    <UnitTest name="Tests.ControllerTests.TestAddTask_ReturnsCreatedResult" storage="c:\users\monte\documents\pruebaalsacia\sistemagestiontareas\tests\bin\debug\net8.0\tests.dll" id="fbe99ba2-1e40-e2fd-75b0-b19bc6f22894">
+      <Execution id="fc4b6418-881c-4a61-b6fb-5eb2fa67d0a0" />
+      <TestMethod codeBase="C:\Users\monte\Documents\PruebaAlsacia\SistemaGestionTareas\Tests\bin\Debug\net8.0\Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tests.ControllerTests" name="TestAddTask_ReturnsCreatedResult" />
+    </UnitTest>
+    <UnitTest name="Tests.ControllerTests.TestDeleteTask_ReturnsOkResult" storage="c:\users\monte\documents\pruebaalsacia\sistemagestiontareas\tests\bin\debug\net8.0\tests.dll" id="4f26d77b-09ca-901e-26ec-7d2ca9f9c227">
+      <Execution id="34d2a5e6-2585-419c-8076-0a0e4f19d426" />
+      <TestMethod codeBase="C:\Users\monte\Documents\PruebaAlsacia\SistemaGestionTareas\Tests\bin\Debug\net8.0\Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tests.ControllerTests" name="TestDeleteTask_ReturnsOkResult" />
+    </UnitTest>
+    <UnitTest name="Tests.TaskTests.Task_ShouldSetTitle_WhenValidTitle" storage="c:\users\monte\documents\pruebaalsacia\sistemagestiontareas\tests\bin\debug\net8.0\tests.dll" id="3e39ad7c-388a-6e23-9bf3-579af9f040de">
+      <Execution id="d8193a77-051c-43eb-9e61-5bf4d5cd48fa" />
+      <TestMethod codeBase="C:\Users\monte\Documents\PruebaAlsacia\SistemaGestionTareas\Tests\bin\Debug\net8.0\Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tests.TaskTests" name="Task_ShouldSetTitle_WhenValidTitle" />
+    </UnitTest>
+    <UnitTest name="Tests.TaskTests.Task_ShouldThrowException_WhenDescriptionIsNullOrEmpty" storage="c:\users\monte\documents\pruebaalsacia\sistemagestiontareas\tests\bin\debug\net8.0\tests.dll" id="15f9dba5-a79a-1f67-9ee4-cdb88f484e26">
+      <Execution id="6a16f30a-df49-49d9-983a-5ec801297c61" />
+      <TestMethod codeBase="C:\Users\monte\Documents\PruebaAlsacia\SistemaGestionTareas\Tests\bin\Debug\net8.0\Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tests.TaskTests" name="Task_ShouldThrowException_WhenDescriptionIsNullOrEmpty" />
+    </UnitTest>
+    <UnitTest name="Tests.TaskTests.Task_ShouldSetExpirationDate_WhenValidExpirationDate" storage="c:\users\monte\documents\pruebaalsacia\sistemagestiontareas\tests\bin\debug\net8.0\tests.dll" id="57c4e6af-cf6f-1b46-f56a-be5d3d128875">
+      <Execution id="f31c4ab6-27a9-4d84-969f-8bc9c83119c9" />
+      <TestMethod codeBase="C:\Users\monte\Documents\PruebaAlsacia\SistemaGestionTareas\Tests\bin\Debug\net8.0\Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tests.TaskTests" name="Task_ShouldSetExpirationDate_WhenValidExpirationDate" />
+    </UnitTest>
+    <UnitTest name="Tests.ControllerTests.TestGetAll_ReturnsOkResult" storage="c:\users\monte\documents\pruebaalsacia\sistemagestiontareas\tests\bin\debug\net8.0\tests.dll" id="edb2b2d3-7242-7ffb-c2d7-5444e3bd7b04">
+      <Execution id="140059a0-3341-46ec-99f0-7c02c56f18bd" />
+      <TestMethod codeBase="C:\Users\monte\Documents\PruebaAlsacia\SistemaGestionTareas\Tests\bin\Debug\net8.0\Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tests.ControllerTests" name="TestGetAll_ReturnsOkResult" />
+    </UnitTest>
+    <UnitTest name="Tests.ControllerTests.TestGetAll_ReturnsNotFoundResult" storage="c:\users\monte\documents\pruebaalsacia\sistemagestiontareas\tests\bin\debug\net8.0\tests.dll" id="2ee41c34-4a29-6d25-9a2d-b35daf1c34e5">
+      <Execution id="1ec7c7a2-8a48-44ff-863e-f77b392bc252" />
+      <TestMethod codeBase="C:\Users\monte\Documents\PruebaAlsacia\SistemaGestionTareas\Tests\bin\Debug\net8.0\Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tests.ControllerTests" name="TestGetAll_ReturnsNotFoundResult" />
+    </UnitTest>
+    <UnitTest name="Tests.ControllerTests.TestGetById_ReturnsNotFoundResult" storage="c:\users\monte\documents\pruebaalsacia\sistemagestiontareas\tests\bin\debug\net8.0\tests.dll" id="43a20961-a799-b8bb-b8bf-acfedeabf1bc">
+      <Execution id="0b7839dc-f8aa-4c93-9f6c-c5687a6ae815" />
+      <TestMethod codeBase="C:\Users\monte\Documents\PruebaAlsacia\SistemaGestionTareas\Tests\bin\Debug\net8.0\Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tests.ControllerTests" name="TestGetById_ReturnsNotFoundResult" />
+    </UnitTest>
+    <UnitTest name="Tests.TaskTests.Task_ShouldThrowException_WhenTitleIsNullOrEmpty" storage="c:\users\monte\documents\pruebaalsacia\sistemagestiontareas\tests\bin\debug\net8.0\tests.dll" id="18fb11bc-38b1-3f54-9477-1eb2f1c61765">
+      <Execution id="fbbf2771-a4a9-47dc-8dca-7ebfce88d43c" />
+      <TestMethod codeBase="C:\Users\monte\Documents\PruebaAlsacia\SistemaGestionTareas\Tests\bin\Debug\net8.0\Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tests.TaskTests" name="Task_ShouldThrowException_WhenTitleIsNullOrEmpty" />
+    </UnitTest>
+    <UnitTest name="Tests.TaskTests.Task_ShouldThrowException_WhenExpirationDateIsInThePast" storage="c:\users\monte\documents\pruebaalsacia\sistemagestiontareas\tests\bin\debug\net8.0\tests.dll" id="f191727e-9f24-3daf-e371-3e1ca0c4ebe4">
+      <Execution id="af87f2d6-4d82-4451-bc31-031f84dc2e36" />
+      <TestMethod codeBase="C:\Users\monte\Documents\PruebaAlsacia\SistemaGestionTareas\Tests\bin\Debug\net8.0\Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tests.TaskTests" name="Task_ShouldThrowException_WhenExpirationDateIsInThePast" />
+    </UnitTest>
+    <UnitTest name="Tests.TaskTests.Task_ShouldThrowException_WhenInvalidStatus" storage="c:\users\monte\documents\pruebaalsacia\sistemagestiontareas\tests\bin\debug\net8.0\tests.dll" id="4b45d5fc-2f01-1360-862a-7fa7f8d6bbff">
+      <Execution id="9faa6df4-c0c4-4dad-9627-fb551d26dc52" />
+      <TestMethod codeBase="C:\Users\monte\Documents\PruebaAlsacia\SistemaGestionTareas\Tests\bin\Debug\net8.0\Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tests.TaskTests" name="Task_ShouldThrowException_WhenInvalidStatus" />
+    </UnitTest>
+    <UnitTest name="Tests.TaskTests.Task_ShouldSetStatus_WhenValidStatus" storage="c:\users\monte\documents\pruebaalsacia\sistemagestiontareas\tests\bin\debug\net8.0\tests.dll" id="37d86582-7e92-0d66-9dab-3a385fec8404">
+      <Execution id="5a286cb3-83ff-42d9-980b-10ab375ea32e" />
+      <TestMethod codeBase="C:\Users\monte\Documents\PruebaAlsacia\SistemaGestionTareas\Tests\bin\Debug\net8.0\Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tests.TaskTests" name="Task_ShouldSetStatus_WhenValidStatus" />
+    </UnitTest>
+    <UnitTest name="Tests.ControllerTests.TestGetById_ReturnsOkResult" storage="c:\users\monte\documents\pruebaalsacia\sistemagestiontareas\tests\bin\debug\net8.0\tests.dll" id="b8673378-078f-3e52-ddd4-9b0a948e598a">
+      <Execution id="3cac73f8-d73a-4ab9-a8d2-ef39f843acd5" />
+      <TestMethod codeBase="C:\Users\monte\Documents\PruebaAlsacia\SistemaGestionTareas\Tests\bin\Debug\net8.0\Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tests.ControllerTests" name="TestGetById_ReturnsOkResult" />
+    </UnitTest>
+    <UnitTest name="Tests.TaskTests.Task_ShouldSetDefaultStatus_WhenCreated" storage="c:\users\monte\documents\pruebaalsacia\sistemagestiontareas\tests\bin\debug\net8.0\tests.dll" id="75c9a54c-538a-dbaf-31a2-b6ecd05420a2">
+      <Execution id="0e8193be-6b8f-4c72-b9f3-e54a032d9d5f" />
+      <TestMethod codeBase="C:\Users\monte\Documents\PruebaAlsacia\SistemaGestionTareas\Tests\bin\Debug\net8.0\Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tests.TaskTests" name="Task_ShouldSetDefaultStatus_WhenCreated" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="75c9a54c-538a-dbaf-31a2-b6ecd05420a2" executionId="0e8193be-6b8f-4c72-b9f3-e54a032d9d5f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="72348de9-18cd-d875-d650-9f9c0d0c2db5" executionId="4bb90b4f-cfca-400d-bf6a-1cd658802e66" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fbe99ba2-1e40-e2fd-75b0-b19bc6f22894" executionId="fc4b6418-881c-4a61-b6fb-5eb2fa67d0a0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b8673378-078f-3e52-ddd4-9b0a948e598a" executionId="3cac73f8-d73a-4ab9-a8d2-ef39f843acd5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="edb2b2d3-7242-7ffb-c2d7-5444e3bd7b04" executionId="140059a0-3341-46ec-99f0-7c02c56f18bd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2ee41c34-4a29-6d25-9a2d-b35daf1c34e5" executionId="1ec7c7a2-8a48-44ff-863e-f77b392bc252" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="49a10143-e464-47df-3c14-dcf902594a91" executionId="a13eb255-2af8-40fb-a491-82205626f5a8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4f26d77b-09ca-901e-26ec-7d2ca9f9c227" executionId="34d2a5e6-2585-419c-8076-0a0e4f19d426" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4b45d5fc-2f01-1360-862a-7fa7f8d6bbff" executionId="9faa6df4-c0c4-4dad-9627-fb551d26dc52" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="18fb11bc-38b1-3f54-9477-1eb2f1c61765" executionId="fbbf2771-a4a9-47dc-8dca-7ebfce88d43c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="37d86582-7e92-0d66-9dab-3a385fec8404" executionId="5a286cb3-83ff-42d9-980b-10ab375ea32e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="43a20961-a799-b8bb-b8bf-acfedeabf1bc" executionId="0b7839dc-f8aa-4c93-9f6c-c5687a6ae815" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="57c4e6af-cf6f-1b46-f56a-be5d3d128875" executionId="f31c4ab6-27a9-4d84-969f-8bc9c83119c9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="15f9dba5-a79a-1f67-9ee4-cdb88f484e26" executionId="6a16f30a-df49-49d9-983a-5ec801297c61" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f191727e-9f24-3daf-e371-3e1ca0c4ebe4" executionId="af87f2d6-4d82-4451-bc31-031f84dc2e36" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3e39ad7c-388a-6e23-9bf3-579af9f040de" executionId="d8193a77-051c-43eb-9e61-5bf4d5cd48fa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Resultados sin formato de lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="16" executed="16" passed="16" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.0.2+dd36e86129 (64-bit .NET 8.0.12)&#xD;
+[xUnit.net 00:00:00.18]   Discovering: Tests&#xD;
+[xUnit.net 00:00:00.24]   Discovered:  Tests&#xD;
+[xUnit.net 00:00:00.28]   Starting:    Tests&#xD;
+[xUnit.net 00:00:00.65]   Finished:    Tests&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

@@ -1,0 +1,64 @@
+networks:
+  app_network:  #Definimos una red personalizada
+    driver: bridge
+
+services:
+#Backend C# .NET Core 8
+  api:
+    build:
+      context: ./SistemaGestionTareas
+      dockerfile: SistemaGestionTareas/Dockerfile
+    depends_on:
+      - api-db
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DockerDB=Host=api-db;Database=PruebaAlsacia;Username=postgres;Password=Abcd123
+    networks:
+      - app_network
+    image: api-image
+    ports:
+      - "5133:8080"
+    container_name: api
+    entrypoint: ["/app/wait-for-it.sh", "api-db", "5432", "--", "dotnet", "SistemaGestionTareas.dll"]
+
+#Fronentd Vite + React
+  web:
+    build:
+      context: ./sistema-gestion-tareas
+      dockerfile: Dockerfile
+    networks:
+      - app_network
+    image: web-image
+    ports:
+      - "5173:5173"
+    container_name: web
+    volumes:
+      - ./sistema-gestion-tareas:/app
+      - /app/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    restart: unless-stopped
+    depends_on:
+      - api  #Asegura que el backend se inicie antes
+
+  api-db:
+    image: postgres:17
+    restart: always
+    container_name: api-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Abcd123
+      POSTGRES_DB: PruebaAlsacia
+      POSTGRES_INITDB_ARGS: "--locale=en_US.UTF-8"
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    ports:
+      - "5432:5432" #Puerto por defecto de PostgreSQL es el 5432
+    networks:
+      - app_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      retries: 5
+      start_period: 10s
+      timeout: 5s
